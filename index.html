@@ -3,6 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Great Idea - Responsive I</title>
 
     <link
@@ -10,11 +11,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/index.css" />
+    
   </head>
 
   <body>
     <div class="container">
-      <header>
+      <header class="header-nav">
         <nav>
           <a href="services.html">Services</a>
           <a href="#">Product</a>
@@ -22,12 +24,13 @@
           <a href="#">Features</a>
           <a href="#">About</a>
           <a href="#">Contact</a>
+        </nav>
+        <div class="logo">
           <img
-            class="logo"
             src="img/logo.png"
             alt="Great Idea! Company logo."
           />
-        </nav>
+        </div>
       </header>
 
       <section class="cta">
@@ -39,7 +42,7 @@
           </h1>
           <button>Get Started</button>
         </div>
-        <img src="img/header-img.png" alt="Image of a code snippet." />
+        <img class="cta-img" src="img/header-img.png" alt="Image of a code snippet." />
       </section>
 
       <section class="main-content">

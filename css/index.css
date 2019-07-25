@@ -70,15 +70,16 @@ h1, h2, h3, h4, h5 {
 	margin: 0 auto;
   }
   
+
   /* header */
   
-  header nav {
+  .header-nav {
 	display: flex;
 	flex-direction: row;
 	justify-content: baseline;
-	align-items: space-around;
+	align-items: space-between;
 	margin-top: 50px;
-
+  display:flex; 
   }
   
   header nav a {
@@ -100,10 +101,34 @@ h1, h2, h3, h4, h5 {
 	margin-right: 0;
   }
   
-  header nav .logo {
+.header-nav .logo {
 	position: relative;
-	margin-top: -15px;
+  margin-top: -15px;
+  margin-left: 65px;
 }
+
+@media (max-width: 800px) {
+  .container {
+
+  }
+  .header-nav {
+    flex-flow: column-reverse wrap;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+  }
+  .header-nav .logo {
+    width: auto 0;
+    margin: 3% 25%;
+  }
+  .cta .cta-img {
+    display: none;
+  }
+  .cta {
+    vertical-align: center;
+  }
+}
+
   .cta {
 	display: flex;
 	flex-flow: row wrap;
@@ -123,7 +148,7 @@ h1, h2, h3, h4, h5 {
 	padding: 8px 44px;
 	font-size: 17px;
 	border: 1px solid black;
-	cursor: pointegitr;
+	cursor: pointer;
   }
   
   .cta .cta-text button:hover {
