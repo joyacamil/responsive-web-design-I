@@ -108,6 +108,9 @@ h1, h2, h3, h4, h5 {
 }
 
 @media (max-width: 800px) {
+  .container {
+    width: 800px;
+  }
   .header-nav {
     flex-flow: column-reverse wrap;
     align-content: center;
@@ -122,12 +125,16 @@ h1, h2, h3, h4, h5 {
   .cta {
     margin: 0 auto;
   }
+  .middle-img {
+   width: 98vw;
+   margin-left: 2.5%;
+   }
 }
 
 @media (max-width: 500px) {
   .container {
-    width: 100%;;
-    margin: 0px 25%;
+    width: 100vw;
+    margin: 0 auto;
   }
   .header-nav nav {
     display: flex;
@@ -136,6 +143,9 @@ h1, h2, h3, h4, h5 {
   }
   .header-nav {
     flex-direction: column-reverse;
+  }
+  .cta {
+    margin: 10% 25%;
   }
   
   .header-nav a {
@@ -146,7 +156,8 @@ h1, h2, h3, h4, h5 {
     padding: 2% 0;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
   }
   .main-content .top-content {
     flex-flow: column wrap;
